@@ -8,6 +8,9 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
   <style>
     body {
       background-color: #f8f9fa;
@@ -18,15 +21,33 @@
       height: 100%;
       object-fit: cover;
     }
-    .wa-button img {
-      max-width: 260px;
+    /* Floating WhatsApp */
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+      text-decoration: none;
+    }
+    .wa-float:hover {
+      background: #1ebe5d;
+      color: #fff;
     }
   </style>
 </head>
 
 <body>
 
-<!-- CONTENT -->
 <div class="container py-4">
 
   <h1 class="text-center fw-bold mb-3">
@@ -39,10 +60,23 @@
 
   <p class="text-center">
     Hunian modern dekat Bandara Dhoho Kediri.<br>
-    Cocok untuk <strong>hunian pribadi</strong>, <strong>disewakan</strong>, dan <strong>investasi jangka panjang</strong>.
+    Cocok untuk <strong>hunian</strong>, <strong>disewakan</strong>, dan <strong>investasi jangka panjang</strong>.
   </p>
 
-  <hr class="my-4">
+  <!-- BUTTON CTA -->
+  <div class="d-flex justify-content-center gap-3 my-4 flex-wrap">
+    <a href="https://wa.me/6285945400268?text=Halo%20saya%20ingin%20booking%20unit%20Dhoho%20Airport%20Village"
+       class="btn btn-success btn-lg">
+      📲 Booking Sekarang
+    </a>
+
+    <a href="https://wa.me/6285945400268?text=Halo%20saya%20ingin%20cek%20lokasi%20Dhoho%20Airport%20Village"
+       class="btn btn-outline-success btn-lg">
+      📍 Cek Lokasi
+    </a>
+  </div>
+
+  <hr>
 
   <!-- KEUNGGULAN -->
   <div class="row text-center mb-4">
@@ -59,41 +93,32 @@
     <div class="col-6 col-md-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasCjqi8RwuVhy4igIg9jK4E7q33Vdr102agau5aTk-Fytkhf11Wy4ZEhNIOkxJTNe5JSFWPyc3GZZmQD44Qwoslbgn5v6n-VYv2xKpff4pWnUl9xZ_7YrdJIjxQfzQJYNXscBX3RuxTZwDf63pKdAKVUpRV9Wd7JFa-jujJnzW5gX9_dkIpDZgMOt/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.48%20(1).jpeg">
     </div>
-
     <div class="col-6 col-md-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiz_1NuppQXBgjbkE1HUD0hM_wy2Dh4FkwWR_bMEHC8CIDY6GWJXBKmv6CRfFJO_fA7NfnT6dBqJKBkxUPP9AjValikkJVNVwvHTZpJ0Cqx1nC5PMii_4IKWbHi2TRjlL1b0k9OdYGsmxhLBk1CFQdeIjs39c4I6OvDIyraQ1gjLwttGckU4AhgbIfv/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.48.jpeg">
     </div>
-
     <div class="col-6 col-md-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuD1dqgzvkJWN6sAGARnHOETUnSbcC6nIY_aUBJ293lgdp7mRv6Y7m4PwLtw8ObsRTwku1jsFQ7jLtDzLF7J5T9nDA-TgUK-XFMZkSwa12WUBwFfEOtczRzeszTFkNEI4887csc5uYjVD2WoXrPwr2SzEvYono3C-xuvSiwnUKiOiLDYdued5Hf440/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.32.jpeg">
     </div>
-
     <div class="col-6 col-md-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEinxcaqDHBIVe_QhzYET_wg89gnroVm1a_0fg0JydfWomA0jjsuBcUtsmNqoYwgD_jRMkxl-6WI7idBtqvrObvoTTee3JpivvuaVBBC5PcKizajCV5QDueCRFiVH8lu3CIQJGT_GMt_ggC4V_a52KUDKqbE_3N3pxAIEAu4eiZ2M_KYqaYKXJa592F_/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.11.jpeg">
     </div>
-
     <div class="col-6 col-md-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUpUAn1a0df3YxgObcz2htpV_R5u3mjCAA8-F4MxWK_yneMlndsBV5T94l8LTcncqu7N9QL1o3pHtTzzvLayhMG4sWGGGHoG8-aDY6JXVaGky7bLdWQitU_HTYwbMr-9Tsi8eYiX-Vqfojqw5uw8zlL4MXGQ_k5NukDZsFKU2Wp66xBMIY5II8HZM7/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.10%20(1).jpeg">
     </div>
-
     <div class="col-6 col-md-4">
       <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgtwr-YiE9PjHUlsfw7INfdCg5Sqm93PwhOZko5-OiKoDm1swqKTU-CQGfm6Nv1wQfXV5t6gwGgLxwACsSs1VyQeoJ9WWYzvQ-9q7TrqIhLStrVhdSZAUf4IQh6pQqW7I-O2dEuvSg8yCZUqdy0bk22xZU3Ff8d0mM4N3mbDscRLvG72kGkGUXJeg_3/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.10.jpeg">
     </div>
   </div>
 
-  <!-- CTA WA -->
-  <div class="text-center mt-5 wa-button">
-    <a href="https://wa.me/6285945400268" target="_blank">
-      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjasCjqi8RwuVhy4igIg9jK4E7q33Vdr102agau5aTk-Fytkhf11Wy4ZEhNIOkxJTNe5JSFWPyc3GZZmQD44Qwoslbgn5v6n-VYv2xKpff4pWnUl9xZ_7YrdJIjxQfzQJYNXscBX3RuxTZwDf63pKdAKVUpRV9Wd7JFa-jujJnzW5gX9_dkIpDZgMOt/s320/WhatsApp%20Image%202026-01-14%20at%2017.20.48%20(1).jpeg"
-           alt="Chat WhatsApp">
-    </a>
-
-    <p class="mt-3 fw-bold">
-      WA: 0859-4540-0268
-    </p>
-  </div>
-
 </div>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/6285945400268"
+   class="wa-float"
+   target="_blank"
+   aria-label="WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
 
 </body>
 </html>
